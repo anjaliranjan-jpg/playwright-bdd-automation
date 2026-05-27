@@ -1,0 +1,10 @@
+node_modules/
+dist/
+allure-results/
+allure-report/
+*.log
+.env
+.env.local
+.DS_Store
+Thumbs.db
+src/utils/test-upload.txt
