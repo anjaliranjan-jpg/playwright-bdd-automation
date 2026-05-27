@@ -77,6 +77,6 @@ export class HomePage extends BasePage {
   async getLoggedInUserName(): Promise<string> {
     const userEl = this.page.getByText(/Logged in as/);
     await expect(userEl).toBeVisible();
-    return userEl.textContent() ?? '';
+    const text = await userEl.textContent(); return text ?? '';
   }
 }
